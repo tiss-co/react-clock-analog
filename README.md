@@ -7,22 +7,37 @@
 ## Install
 
 ```bash
-npm install --save react-clock-analog
+npm i react-clock-analog
+```
+or
+```bash
+yarn add react-clock-analog
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react';
+import './index.css';
 
-import MyComponent from 'react-clock-analog'
-import 'react-clock-analog/dist/index.css'
+import { AnalogClock } from 'react-clock-analog';
+import 'react-clock-analog/dist/index.css';
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+const App = () => {
+  return (
+      <AnalogClock
+        className='AnalogClock'
+        hour={4}
+        minute={30}
+        loading={false}
+        darkMode={false}
+        centerDot={true}
+      />
+  );
+};
+
+export default App;
+
 ```
 
 ## License
