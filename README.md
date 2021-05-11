@@ -3,6 +3,7 @@
 > Simple analog clock for React
 
 [![NPM](https://img.shields.io/npm/v/react-clock-analog.svg)](https://www.npmjs.com/package/react-clock-analog) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+![react-clock-analog Banner](https://user-images.githubusercontent.com/76048512/117821459-dab84700-b280-11eb-8563-2c5fd2a886d3.png)
 
 ## Install
 
