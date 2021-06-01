@@ -25,15 +25,15 @@ export const AnalogClock = ({
 
   return (
     <div
-      className={classNames(css.container, className, {
-        [css.transition]: hour !== 0 && hour !== 12 && minute !== 0,
-        [css.loading]: loading,
-        [css.Dark]: darkMode
+      className={classNames(css.Container_AnalogClock, className, {
+        [css.Transition_AnalogClock]: hour !== 0 && hour !== 12 && minute !== 0,
+        [css.Loading_AnalogClock]: loading,
+        [css.Dark_AnalogClock]: darkMode
       })}
     >
       {centerDot && <div className={css.circle} />}
-      <div className={css.minute} style={minuteStyle} />
-      <div className={css.hour} style={hourStyle} />
+      <div className={css.Minute_AnalogClock} style={minuteStyle} />
+      <div className={css.Hour_AnalogClock} style={hourStyle} />
     </div>
   );
 };

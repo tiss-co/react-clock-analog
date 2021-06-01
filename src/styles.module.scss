@@ -1,7 +1,7 @@
 $color-light: #2a2a2a;
 $color-dark: #e5e6ec;
 
-.container {
+.Container_AnalogClock {
   position: relative;
   border-radius: 50%;
   border: 2px solid $color-light;
@@ -15,15 +15,15 @@ $color-dark: #e5e6ec;
     background-color: $color-light;
   }
 
-  &.loading * {
+  &.Loading_AnalogClock * {
     animation: blink 2s ease infinite !important;
   }
 
-  &.transition * {
+  &.Transition_AnalogClock * {
     transition: 1s;
   }
 
-  > .circle {
+  > .Circle_AnalogClock {
     position: absolute;
     width: 5px;
     height: 5px;
@@ -33,7 +33,7 @@ $color-dark: #e5e6ec;
     transform-origin: 0;
   }
 
-  > .minute {
+  > .Minute_AnalogClock {
     position: absolute;
     width: 45%;
     transform-origin: 0;
@@ -41,7 +41,7 @@ $color-dark: #e5e6ec;
     left: 50%;
   }
 
-  > .hour {
+  > .Hour_AnalogClock {
     position: absolute;
     width: 40%;
     transform-origin: 0;
@@ -49,7 +49,7 @@ $color-dark: #e5e6ec;
     left: 50%;
   }
 
-  &.Dark {
+  &.Dark_AnalogClock {
     border-color: $color-dark;
     * {
       background-color: $color-dark;
