@@ -9,7 +9,7 @@ export const AnalogClock = ({
   minute = 30,
   loading = false,
   darkMode = false,
-  centerDot = true
+  centerDot = false
 }) => {
   const itemHeight = 2;
 
@@ -31,7 +31,7 @@ export const AnalogClock = ({
         [css.Dark_AnalogClock]: darkMode
       })}
     >
-      {centerDot && <div className={css.circle} />}
+      {centerDot && <div className={css.Circle_AnalogClock} />}
       <div className={css.Minute_AnalogClock} style={minuteStyle} />
       <div className={css.Hour_AnalogClock} style={hourStyle} />
     </div>
