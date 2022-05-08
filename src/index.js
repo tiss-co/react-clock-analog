@@ -9,7 +9,8 @@ export const AnalogClock = ({
   minute = 30,
   loading = false,
   darkMode = false,
-  centerDot = false
+  centerDot = false,
+  id,
 }) => {
   const itemHeight = 2;
 
@@ -30,6 +31,7 @@ export const AnalogClock = ({
         [css.Loading_AnalogClock]: loading,
         [css.Dark_AnalogClock]: darkMode
       })}
+      id={id}
     >
       {centerDot && <div className={css.Circle_AnalogClock} />}
       <div className={css.Minute_AnalogClock} style={minuteStyle} />
@@ -45,4 +47,5 @@ AnalogClock.propTypes = {
   loading: PropTypes.bool,
   darkMode: PropTypes.bool,
   centerDot: PropTypes.bool,
+  id: PropTypes.string,
 };
